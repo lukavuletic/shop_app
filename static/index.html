@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">    <!--favicon.ico error-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="./js/angular.js"></script>
+    <script type="text/javascript" src="./js/angApp.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/list.js"></script>
+    <script type="text/javascript" src="./js/bmi.js"></script>
+
+    <title>Shop app</title>
+  </head>
+
+  <body ng-app="projekt" ng-cloak>
+
+    <div class="container">     
+      
+      <div ng-controller="MainController as main" class="toggle">
+        <a class="col-md-3" ng-click="main.toggleView('register.html')">Register</a>
+        <a class="col-md-3" ng-click="main.toggleView('login.html')">Login</a>
+        <a class="col-md-3" ng-click="main.toggleView('baza.html')">Account</a>
+        <a class="col-md-3" ng-click="main.toggleView('index.html')">Shop</a>
+      
+        <div ng-include="main.presentedView"></div>
+      </div> 
+
+  </body>
+</html>

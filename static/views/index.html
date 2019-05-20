@@ -1,0 +1,124 @@
+<body>
+<br><br><br>
+
+    <!-- Page Content -->
+    <div class="container" ng-controller="ListController as list">
+
+    <div class="table-responsive" ng-hide="listError == true">
+        <p ng-repeat="user in list.users">
+            {{user.username}}'s current balance is: {{user.balance}}
+        </p>
+    </div>
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">20</h4>
+                                <h4>HAT</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                <button type="button" class="btn btn-default pull-right">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">100</h4>
+                                <h4><a href="#">JACKET</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                <button type="button" class="btn btn-default pull-right">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">20</h4>
+                                <h4><a href="#">GLOVES</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                <button type="button" class="btn btn-default pull-right">BUY</button>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="col-xs-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">80</h4>
+                                <h4><a href="#">PANTS</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                <button type="button" class="btn btn-default pull-right">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">90</h4>
+                                <h4><a href="#">BOOTS</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                <button type="button" class="btn btn-default pull-right">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">60</h4>
+                                <h4><a href="#">SHOES</a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                <button type="button" class="btn btn-default pull-right">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Copyright &copy; Luka Vuletic 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

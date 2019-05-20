@@ -1,0 +1,15 @@
+<div ng-controller="AmountController as amnt"><br><br><br>
+
+	Change the current amount in the field below
+
+	<input class="form-control" placeholder="Max amount 99999" id="balance" type="text" ng-model="balance" id="balance"><br>
+
+	<div ng-show="username == null" class="alert alert-danger">
+  		<strong>Log in first!</strong>
+	</div>
+
+	<button ng-hide="loginSuccess == false" class="btn btn-primary" ng-click="amnt.send(balance)">OK</button><br><br>
+
+	Current balance {{balance}}
+		
+</div>
